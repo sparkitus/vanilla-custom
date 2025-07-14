@@ -28,8 +28,7 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
-        with:
-          token: ${{ secrets.WORKFLOW }}
+
       - name: Install dependencies
         run: sudo apt-get install -y jq skopeo libfyaml-utils
 
